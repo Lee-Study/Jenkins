@@ -1,0 +1,26 @@
+---
+packages:
+- name: jenkins
+  version: 4e296c965159ac7e4a05fed8916fae2840327583
+  fingerprint: 4e296c965159ac7e4a05fed8916fae2840327583
+  sha1: c6a5c8bf0c9ae87d10d542c5e680341a5b7c51e6
+  dependencies: []
+- name: nginx
+  version: c15d8e6a773eeb9c605ac4fc8103ac553304457a
+  fingerprint: c15d8e6a773eeb9c605ac4fc8103ac553304457a
+  sha1: 17bb2c5e3df89488a5d6b0755d41488631feffb8
+  dependencies: []
+- name: jre
+  version: 044b84a3de450abfedd8a46bc0431d264ff91017
+  fingerprint: 044b84a3de450abfedd8a46bc0431d264ff91017
+  sha1: 18edceeb3a42d845cc87321675875a2739d307dc
+  dependencies: []
+jobs:
+- name: jenkins_master
+  version: 2514c239befdc4d1fbfd0d87f47c0b51ef1acc56
+  fingerprint: 2514c239befdc4d1fbfd0d87f47c0b51ef1acc56
+  sha1: cc02df5d3ba7b6394abb035d88e747397e97e9eb
+commit_hash: c7e70f2c
+uncommitted_changes: false
+name: jenkins-release
+version: 0+dev.1

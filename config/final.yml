@@ -1,0 +1,7 @@
+---
+blobstore:
+  provider: local
+  options:
+    blobstore_path: ../src/
+final_name: jenkins-release
+
