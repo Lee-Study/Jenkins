@@ -1,13 +1,8 @@
 # abort script on any command that exit with a non zero value
 set -e
 
-if [[ `uname -a` =~ "x86_64" ]] ; then
-  archive="java/jre-7u45-linux-x64.gz"
-  echo "Using 64-bit version"
-else
-  echo "Only 64-bit architectures are supported."
-  exit 1
-fi
+archive="java/jre-8u171-linux-x64.tar.gz"
+
 
 if [[ -f $archive ]] ; then
   echo "Archive found"
@@ -19,8 +14,8 @@ fi
 echo "Extracting archive..."
 tar xzf $archive
 
-if [[ -d jre1.7.0_45/bin && `jre1.7.0_45/bin/java -version 2>&1` =~ "Java HotSpot" && $? == 0 ]]; then
-  cp -a jre1.7.0_45/* ${BOSH_INSTALL_TARGET}
+if [[ -d jre1.8.0_171/bin && `jre1.8.0_171/bin/java -version 2>&1` =~ "Java HotSpot" && $? == 0 ]]; then
+  cp -a jre1.8.0_171/* ${BOSH_INSTALL_TARGET}
 else
   echo "JVM is not properly packaged"
   exit 1

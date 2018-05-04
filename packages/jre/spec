@@ -1,4 +1,4 @@
 ---
 name: jre
 files:
-- java/jre-7u45-linux-x64.gz
+- java/jre-8u171-linux-x64.tar.gz
